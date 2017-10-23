@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs xmlns="http://www.vivo.com.cn/schema/mybatis-sharding-db"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.vivo.com.cn/schema/mybatis-sharding-db
+	http://www.vivo.com.cn/schema/mybatis-sharding-db/mybatis-sharding-db.xsd">
+	<!--global setting-->
+	<properties>
+		<property name="minPoolSize" value="2" />
+		<property name="maxPoolSize" value="5" />
+		<property name="driverClass" value="com.mysql.jdbc.Driver" />
+		<property name="maxIdleTime" value="900"></property>
+		<property name="idleConnectionTestPeriod" value="1800"></property>
+		<property name="checkoutTimeout" value="3000"></property>
+	</properties>
+
+	<database singleton="true" logicName="database">
+		<properties>
+			<property name="jdbcUrl"
+				value="jdbc:mysql://192.168.2.198:3312/appcontent?useUnicode=true&amp;characterEncoding=UTF-8" />
+			<property name="user" value="testcontent" encrypt="false" />
+			<property name="password" value="testcontent" encrypt="false" />
+		</properties>
+	</database>
+</configs>

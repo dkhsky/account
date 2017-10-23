@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Bundle-Version: 1.0
+Bundle-SymbolicName: cn.com.vivo.account.test
+Bundle-Name: account-test
+Bundle-Vendor: vivo.com.cn
+Spring-Config: classpath*:META-INF/spring/*.xml

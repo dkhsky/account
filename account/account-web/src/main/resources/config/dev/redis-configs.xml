@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs xmlns="http://www.vivo.com.cn/schema/vivo-redis"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://www.vivo.com.cn/schema/vivo-redis
+	http://www.vivo.com.cn/schema/vivo-redis/vivo-redis.xsd">
+	<redis-pool name="redisDb" host="192.168.2.234" port="7878">
+		<properties>
+			<property name="maxTotal" value="20" />
+			<property name="maxIdle" value="10" />
+			<property name="minIdle" value="2" />
+		</properties>
+	</redis-pool>
+</configs>
